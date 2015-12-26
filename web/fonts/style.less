@@ -1,0 +1,804 @@
+@import "variables"
+
+@font-face {
+	font-family: 'yooyoico';
+	src:url('fonts/yooyoico.eot?ivjped');
+	src:url('fonts/yooyoico.eot?ivjped#iefix') format('embedded-opentype'),
+		url('fonts/yooyoico.ttf?ivjped') format('truetype'),
+		url('fonts/yooyoico.woff?ivjped') format('woff'),
+		url('fonts/yooyoico.svg?ivjped#yooyoico') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.icon {
+    /* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'yooyoico' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.ico-about {
+	&:before {
+		content: @ico-about;
+	}
+}
+.ico-add {
+	&:before {
+		content: @ico-add;
+	}
+}
+.ico-arrows-down {
+	&:before {
+		content: @ico-arrows-down;
+	}
+}
+.ico-arrows-left {
+	&:before {
+		content: @ico-arrows-left;
+	}
+}
+.ico-arrows-right {
+	&:before {
+		content: @ico-arrows-right;
+	}
+}
+.ico-arrows-up {
+	&:before {
+		content: @ico-arrows-up;
+	}
+}
+.ico-beizhu {
+	&:before {
+		content: @ico-beizhu;
+	}
+}
+.ico-bell {
+	&:before {
+		content: @ico-bell;
+	}
+}
+.ico-book {
+	&:before {
+		content: @ico-book;
+	}
+}
+.ico-browse {
+	&:before {
+		content: @ico-browse;
+	}
+}
+.ico-building {
+	&:before {
+		content: @ico-building;
+	}
+}
+.ico-bus {
+	&:before {
+		content: @ico-bus;
+	}
+}
+.ico-card {
+	&:before {
+		content: @ico-card;
+	}
+}
+.ico-choose-off {
+	&:before {
+		content: @ico-choose-off;
+	}
+}
+.ico-choose-on {
+	&:before {
+		content: @ico-choose-on;
+	}
+}
+.ico-chufa {
+	&:before {
+		content: @ico-chufa;
+	}
+}
+.ico-chuli {
+	&:before {
+		content: @ico-chuli;
+	}
+}
+.ico-circle {
+	&:before {
+		content: @ico-circle;
+	}
+}
+.ico-code {
+	&:before {
+		content: @ico-code;
+	}
+}
+.ico-coin {
+	&:before {
+		content: @ico-coin;
+	}
+}
+.ico-collection {
+	&:before {
+		content: @ico-collection;
+	}
+}
+.ico-coupons {
+	&:before {
+		content: @ico-coupons;
+	}
+}
+.ico-crown {
+	&:before {
+		content: @ico-crown;
+	}
+}
+.ico-danxuan-off {
+	&:before {
+		content: @ico-danxuan-off;
+	}
+}
+.ico-danxuan-on {
+	&:before {
+		content: @ico-danxuan-on;
+	}
+}
+.ico-distance {
+	&:before {
+		content: @ico-distance;
+	}
+}
+.ico-doublearrows-down {
+	&:before {
+		content: @ico-doublearrows-down;
+	}
+}
+.ico-doublearrows-up {
+	&:before {
+		content: @ico-doublearrows-up;
+	}
+}
+.ico-download {
+	&:before {
+		content: @ico-download;
+	}
+}
+.ico-editor {
+	&:before {
+		content: @ico-editor;
+	}
+}
+.ico-endclock {
+	&:before {
+		content: @ico-endclock;
+	}
+}
+.ico-favorites {
+	&:before {
+		content: @ico-favorites;
+	}
+}
+.ico-favorites-sel {
+	&:before {
+		content: @ico-favorites-sel;
+	}
+}
+.ico-faxian {
+	&:before {
+		content: @ico-faxian;
+	}
+}
+.ico-flag {
+	&:before {
+		content: @ico-flag;
+	}
+}
+.ico-flower {
+	&:before {
+		content: @ico-flower;
+	}
+}
+.ico-friends {
+	&:before {
+		content: @ico-friends;
+	}
+}
+.ico-gesture {
+	&:before {
+		content: @ico-gesture;
+	}
+}
+.ico-home {
+	&:before {
+		content: @ico-home;
+	}
+}
+.ico-info {
+	&:before {
+		content: @ico-info;
+	}
+}
+.ico-information {
+	&:before {
+		content: @ico-information;
+	}
+}
+.ico-introduce {
+	&:before {
+		content: @ico-introduce;
+	}
+}
+.ico-jieshao {
+	&:before {
+		content: @ico-jieshao;
+	}
+}
+.ico-lishiclock {
+	&:before {
+		content: @ico-lishiclock;
+	}
+}
+.ico-location {
+	&:before {
+		content: @ico-location;
+	}
+}
+.ico-location-sel {
+	&:before {
+		content: @ico-location-sel;
+	}
+}
+.ico-lock {
+	&:before {
+		content: @ico-lock;
+	}
+}
+.ico-map_bus {
+	&:before {
+		content: @ico-map_bus;
+	}
+}
+.ico-map_car {
+	&:before {
+		content: @ico-map_car;
+	}
+}
+.ico-map_walk {
+	&:before {
+		content: @ico-map_walk;
+	}
+}
+.ico-miaosha {
+	&:before {
+		content: @ico-miaosha;
+	}
+}
+.ico-minus {
+	&:before {
+		content: @ico-minus;
+	}
+}
+.ico-notice1 {
+	&:before {
+		content: @ico-notice1;
+	}
+}
+.ico-ok {
+	&:before {
+		content: @ico-ok;
+	}
+}
+.ico-ok-sel {
+	&:before {
+		content: @ico-ok-sel;
+	}
+}
+.ico-oneyuan {
+	&:before {
+		content: @ico-oneyuan;
+	}
+}
+.ico-order {
+	&:before {
+		content: @ico-order;
+	}
+}
+.ico-package {
+	&:before {
+		content: @ico-package;
+	}
+}
+.ico-passenger {
+	&:before {
+		content: @ico-passenger;
+	}
+}
+.ico-phone {
+	&:before {
+		content: @ico-phone;
+	}
+}
+.ico-qq {
+	&:before {
+		content: @ico-qq;
+	}
+}
+.ico-question {
+	&:before {
+		content: @ico-question;
+	}
+}
+.ico-question-sel {
+	&:before {
+		content: @ico-question-sel;
+	}
+}
+.ico-record {
+	&:before {
+		content: @ico-record;
+	}
+}
+.ico-ring_star {
+	&:before {
+		content: @ico-ring_star;
+	}
+}
+.ico-riqi {
+	&:before {
+		content: @ico-riqi;
+	}
+}
+.ico-route {
+	&:before {
+		content: @ico-route;
+	}
+}
+.ico-scenery {
+	&:before {
+		content: @ico-scenery;
+	}
+}
+.ico-scope {
+	&:before {
+		content: @ico-scope;
+	}
+}
+.ico-screening {
+	&:before {
+		content: @ico-screening;
+	}
+}
+.ico-search {
+	&:before {
+		content: @ico-search;
+	}
+}
+.ico-service {
+	&:before {
+		content: @ico-service;
+	}
+}
+.ico-share {
+	&:before {
+		content: @ico-share;
+	}
+}
+.ico-shibai {
+	&:before {
+		content: @ico-shibai;
+	}
+}
+.ico-sina {
+	&:before {
+		content: @ico-sina;
+	}
+}
+.ico-sort {
+	&:before {
+		content: @ico-sort;
+	}
+}
+.ico-space {
+	&:before {
+		content: @ico-space;
+	}
+}
+.ico-star {
+	&:before {
+		content: @ico-star;
+	}
+}
+.ico-successful {
+	&:before {
+		content: @ico-successful;
+	}
+}
+.ico-sun {
+	&:before {
+		content: @ico-sun;
+	}
+}
+.ico-tag {
+	&:before {
+		content: @ico-tag;
+	}
+}
+.ico-telephone {
+	&:before {
+		content: @ico-telephone;
+	}
+}
+.ico-ticket {
+	&:before {
+		content: @ico-ticket;
+	}
+}
+.ico-time {
+	&:before {
+		content: @ico-time;
+	}
+}
+.ico-trash {
+	&:before {
+		content: @ico-trash;
+	}
+}
+.ico-unlock {
+	&:before {
+		content: @ico-unlock;
+	}
+}
+.ico-user {
+	&:before {
+		content: @ico-user;
+	}
+}
+.ico-user2 {
+	&:before {
+		content: @ico-user2;
+	}
+}
+.ico-vip {
+	&:before {
+		content: @ico-vip;
+	}
+}
+.ico-vipbiaoqian {
+	&:before {
+		content: @ico-vipbiaoqian;
+	}
+}
+.ico-wallet {
+	&:before {
+		content: @ico-wallet;
+	}
+}
+.ico-wechat {
+	&:before {
+		content: @ico-wechat;
+	}
+}
+.ico-xuzhi_anquan {
+	&:before {
+		content: @ico-xuzhi_anquan;
+	}
+}
+.ico-xuzhi_feiyong {
+	&:before {
+		content: @ico-xuzhi_feiyong;
+	}
+}
+.ico-xuzhi_tishi {
+	&:before {
+		content: @ico-xuzhi_tishi;
+	}
+}
+.ico-xuzhi_yuding {
+	&:before {
+		content: @ico-xuzhi_yuding;
+	}
+}
+.ico-youbi {
+	&:before {
+		content: @ico-youbi;
+	}
+}
+.ico-youhuijingqu {
+	&:before {
+		content: @ico-youhuijingqu;
+	}
+}
+.ico-youyou-coin {
+	&:before {
+		content: @ico-youyou-coin;
+	}
+}
+.ico-zhiyin {
+	&:before {
+		content: @ico-zhiyin;
+	}
+}
+.ico-hotspring {
+	&:before {
+		content: @ico-hotspring;
+	}
+}
+.ico-weekend {
+	&:before {
+		content: @ico-weekend;
+	}
+}
+.ico-family {
+	&:before {
+		content: @ico-family;
+	}
+}
+.ico-scenic {
+	&:before {
+		content: @ico-scenic;
+	}
+}
+.ico-pc_del2 {
+	&:before {
+		content: @ico-pc_del2;
+	}
+}
+.ico-heart_solid {
+	&:before {
+		content: @ico-heart_solid;
+	}
+}
+.ico-mic {
+	&:before {
+		content: @ico-mic;
+	}
+}
+.ico-traffic-40 {
+	&:before {
+		content: @ico-traffic-40;
+	}
+}
+.ico-shopping_car {
+	&:before {
+		content: @ico-shopping_car;
+	}
+}
+.ico-vip_type {
+	&:before {
+		content: @ico-vip_type;
+	}
+}
+.ico-arrows-s-up {
+	&:before {
+		content: @ico-arrows-s-up;
+	}
+}
+.ico-arrows-s-down {
+	&:before {
+		content: @ico-arrows-s-down;
+	}
+}
+.ico-triangle_yes {
+	&:before {
+		content: @ico-triangle_yes;
+	}
+}
+.ico-pc_succeed {
+	&:before {
+		content: @ico-pc_succeed;
+	}
+}
+.ico-pc_account {
+	&:before {
+		content: @ico-pc_account;
+	}
+}
+.ico-pc_android {
+	&:before {
+		content: @ico-pc_android;
+	}
+}
+.ico-pc_attention {
+	&:before {
+		content: @ico-pc_attention;
+	}
+}
+.ico-pc_calendar {
+	&:before {
+		content: @ico-pc_calendar;
+	}
+}
+.ico-pc_calendar_left {
+	&:before {
+		content: @ico-pc_calendar_left;
+	}
+}
+.ico-pc_calendar_right {
+	&:before {
+		content: @ico-pc_calendar_right;
+	}
+}
+.ico-pc_car {
+	&:before {
+		content: @ico-pc_car;
+	}
+}
+.ico-pc_circle_close {
+	&:before {
+		content: @ico-pc_circle_close;
+	}
+}
+.ico-pc_circle_vip {
+	&:before {
+		content: @ico-pc_circle_vip;
+	}
+}
+.ico-pc_cost {
+	&:before {
+		content: @ico-pc_cost;
+	}
+}
+.ico-pc_del {
+	&:before {
+		content: @ico-pc_del;
+	}
+}
+.ico-pc_dimension {
+	&:before {
+		content: @ico-pc_dimension;
+	}
+}
+.ico-pc_dinner {
+	&:before {
+		content: @ico-pc_dinner;
+	}
+}
+.ico-pc_eye_close {
+	&:before {
+		content: @ico-pc_eye_close;
+	}
+}
+.ico-pc_eye_open {
+	&:before {
+		content: @ico-pc_eye_open;
+	}
+}
+.ico-pc_fenxiang {
+	&:before {
+		content: @ico-pc_fenxiang;
+	}
+}
+.ico-pc_forget {
+	&:before {
+		content: @ico-pc_forget;
+	}
+}
+.ico-pc_heart {
+	&:before {
+		content: @ico-pc_heart;
+	}
+}
+.ico-pc_hill {
+	&:before {
+		content: @ico-pc_hill;
+	}
+}
+.ico-pc_hotel {
+	&:before {
+		content: @ico-pc_hotel;
+	}
+}
+.ico-pc_ios {
+	&:before {
+		content: @ico-pc_ios;
+	}
+}
+.ico-pc_jieri {
+	&:before {
+		content: @ico-pc_jieri;
+	}
+}
+.ico-pc_know {
+	&:before {
+		content: @ico-pc_know;
+	}
+}
+.ico-pc_nogoods {
+	&:before {
+		content: @ico-pc_nogoods;
+	}
+}
+.ico-pc_number_bg {
+	&:before {
+		content: @ico-pc_number_bg;
+	}
+}
+.ico-pc_password {
+	&:before {
+		content: @ico-pc_password;
+	}
+}
+.ico-pc_plane {
+	&:before {
+		content: @ico-pc_plane;
+	}
+}
+.ico-pc_qiandao {
+	&:before {
+		content: @ico-pc_qiandao;
+	}
+}
+.ico-pc_seckill {
+	&:before {
+		content: @ico-pc_seckill;
+	}
+}
+.ico-pc_service_phone {
+	&:before {
+		content: @ico-pc_service_phone;
+	}
+}
+.ico-pc_top {
+	&:before {
+		content: @ico-pc_top;
+	}
+}
+.ico-pc_traffic {
+	&:before {
+		content: @ico-pc_traffic;
+	}
+}
+.ico-pc_triangle_down {
+	&:before {
+		content: @ico-pc_triangle_down;
+	}
+}
+.ico-pc_triangle_up {
+	&:before {
+		content: @ico-pc_triangle_up;
+	}
+}
+.ico-pc_user_collection {
+	&:before {
+		content: @ico-pc_user_collection;
+	}
+}
+.ico-pc_user_exit {
+	&:before {
+		content: @ico-pc_user_exit;
+	}
+}
+.ico-pc_user_home {
+	&:before {
+		content: @ico-pc_user_home;
+	}
+}
+.ico-pc_user_order {
+	&:before {
+		content: @ico-pc_user_order;
+	}
+}
+.ico-pc_user_setting {
+	&:before {
+		content: @ico-pc_user_setting;
+	}
+}
+.ico-pc_user_ziliao {
+	&:before {
+		content: @ico-pc_user_ziliao;
+	}
+}
+.ico-pc_weixin {
+	&:before {
+		content: @ico-pc_weixin;
+	}
+}
+

@@ -1,0 +1,44 @@
+//基础库
+@import "bass";
+
+//自定义bootstrap变量
+@import "custom-variables.less";
+
+//以下为修改bootstrap样式
+body{
+  padding-top: @test;
+}
+
+//以下部分为注销Glyphicons后，引入自定义图标库修改。
+
+//图标示例
+//<a href="#"><span class="icon ico-about"></span> Star</a>
+
+// Import the fonts (重置字体文件引入地址及字体文件名称)
+@font-face {
+  font-family: 'yooyoico';
+  src: url('@{icon-font-path}@{icon-font-name}.eot');
+  src: url('@{icon-font-path}@{icon-font-name}.eot?#iefix') format('embedded-opentype'),
+//  url('@{icon-font-path}@{icon-font-name}.woff2') format('woff2'),
+  url('@{icon-font-path}@{icon-font-name}.woff') format('woff'),
+  url('@{icon-font-path}@{icon-font-name}.ttf') format('truetype'),
+  url('@{icon-font-path}@{icon-font-name}.svg#@{icon-font-svg-id}') format('svg');
+}
+
+// Catchall baseclass（重置为bootstrap字体通用样式，注释内容为字体样式文件已经定义内容。）
+.icon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+//  font-family: 'yooyoico';
+//  font-style: normal;
+//  font-weight: normal;
+//  line-height: 1;
+//  -webkit-font-smoothing: antialiased;
+//  -moz-osx-font-smoothing: grayscale;
+}
+
+//修改幻灯播放箭头
+.ico-arrows-left{
+  .carousel-control.glyphicon-chevron-left;
+}
