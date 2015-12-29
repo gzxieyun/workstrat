@@ -814,16 +814,16 @@ pre code {
 }
 .row:before,
 .row:after {
-  content: " ";
   display: table;
+  content: "";
 }
 .row:after {
   clear: both;
 }
 .row:before,
 .row:after {
+  content: " ";
   display: table;
-  content: "";
 }
 .row:after {
   clear: both;
@@ -2217,16 +2217,16 @@ select[multiple].input-lg {
 }
 .form-horizontal .form-group:before,
 .form-horizontal .form-group:after {
-  content: " ";
   display: table;
+  content: "";
 }
 .form-horizontal .form-group:after {
   clear: both;
 }
 .form-horizontal .form-group:before,
 .form-horizontal .form-group:after {
+  content: " ";
   display: table;
-  content: "";
 }
 .form-horizontal .form-group:after {
   clear: both;
@@ -6106,4 +6106,4 @@ body {
     display: none !important;
   }
 }
-/*# sourceMappingURL=project.css.map */
+/*# sourceMappingURL=custom-bootstrap.css.map */
