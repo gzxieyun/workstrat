@@ -3,11 +3,6 @@
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-/*!
- * Bootstrap v3.3.6 (http://getbootstrap.com)
- * Copyright 2011-2015 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 @import "../../web/fonts/style.css";
 html {
@@ -5715,7 +5710,7 @@ button.close {
   }
 }
 body {
-  padding-top: 50px;
+  padding-top: 70px;
 }
 @font-face {
   font-family: 'yooyoico';
