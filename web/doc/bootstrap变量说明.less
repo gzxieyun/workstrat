@@ -287,8 +287,8 @@
 //== Media queries breakpoints
 //
 //## Define the breakpoints at which your layout will change, adapting to different screen sizes.
-
-// Extra small screen / phone
+//定义布局自定义宽度,适应不同的屏幕尺寸
+// Extra small screen / phone 小屏幕/手机
 //** Deprecated `@screen-xs` as of v3.0.1
 @screen-xs:                  480px;
 //** Deprecated `@screen-xs-min` as of v3.2.0
@@ -296,21 +296,21 @@
 //** Deprecated `@screen-phone` as of v3.0.1
 @screen-phone:               @screen-xs-min;
 
-// Small screen / tablet
+// Small screen / tablet 小屏幕/桌面
 //** Deprecated `@screen-sm` as of v3.0.1
 @screen-sm:                  768px;
 @screen-sm-min:              @screen-sm;
 //** Deprecated `@screen-tablet` as of v3.0.1
 @screen-tablet:              @screen-sm-min;
 
-// Medium screen / desktop
+// Medium screen / desktop 平板/桌面
 //** Deprecated `@screen-md` as of v3.0.1
 @screen-md:                  992px;
 @screen-md-min:              @screen-md;
 //** Deprecated `@screen-desktop` as of v3.0.1
 @screen-desktop:             @screen-md-min;
 
-// Large screen / wide desktop
+// Large screen / wide desktop 大屏幕/宽桌面
 //** Deprecated `@screen-lg` as of v3.0.1
 @screen-lg:                  1200px;
 @screen-lg-min:              @screen-lg;
@@ -325,22 +325,23 @@
 
 //== Grid system
 //
-//## Define your custom responsive grid.
+//## Define your custom responsive grid.定义响应式栅格
 
-//** Number of columns in the grid.
+//** Number of columns in the grid.网格中的列数
 @grid-columns:              12;
-//** Padding between columns. Gets divided in half for the left and right.
+//** Padding between columns. Gets divided in half for the left and right. 列之间的间隔
 @grid-gutter-width:         30px;
 // Navbar collapse
-//** Point at which the navbar becomes uncollapsed.
+//** Point at which the navbar becomes uncollapsed.导航条小于此宽度折叠为图标
 @grid-float-breakpoint:     @screen-sm-min;
-//** Point at which the navbar begins collapsing.
+//** Point at which the navbar begins collapsing.导航条在此宽度折叠
 @grid-float-breakpoint-max: (@grid-float-breakpoint - 1);
 
 
 //== Container sizes
 //
 //## Define the maximum width of `.container` for different screen sizes.
+//定义container的最大宽度
 
 // Small screen / tablet
 @container-tablet:             (720px + @grid-gutter-width);
@@ -362,7 +363,7 @@
 //
 //##
 
-// Basics of a navbar
+// Basics of a navbar 基本的导航条
 @navbar-height:                    50px;
 @navbar-margin-bottom:             @line-height-computed;
 @navbar-border-radius:             @border-radius-base;
@@ -374,7 +375,7 @@
 @navbar-default-bg:                #f8f8f8;
 @navbar-default-border:            darken(@navbar-default-bg, 6.5%);
 
-// Navbar links
+// Navbar links 导航链接
 @navbar-default-link-color:                #777;
 @navbar-default-link-hover-color:          #333;
 @navbar-default-link-hover-bg:             transparent;
@@ -383,24 +384,24 @@
 @navbar-default-link-disabled-color:       #ccc;
 @navbar-default-link-disabled-bg:          transparent;
 
-// Navbar brand label
+// Navbar brand label 导航标签
 @navbar-default-brand-color:               @navbar-default-link-color;
 @navbar-default-brand-hover-color:         darken(@navbar-default-brand-color, 10%);
 @navbar-default-brand-hover-bg:            transparent;
 
-// Navbar toggle
+// Navbar toggle 导航切换
 @navbar-default-toggle-hover-bg:           #ddd;
 @navbar-default-toggle-icon-bar-bg:        #888;
 @navbar-default-toggle-border-color:       #ddd;
 
 
-//=== Inverted navbar
+//=== Inverted navbar 反色的导航条
 // Reset inverted navbar basics
-@navbar-inverse-color:                      lighten(@gray-light, 15%);
-@navbar-inverse-bg:                         #222;
-@navbar-inverse-border:                     darken(@navbar-inverse-bg, 10%);
+@navbar-inverse-color:                      lighten(@gray-light, 15%); //文字颜色
+@navbar-inverse-bg:                         #222;//背景颜色
+@navbar-inverse-border:                     darken(@navbar-inverse-bg, 10%);//边线颜色
 
-// Inverted navbar links
+// Inverted navbar links 链接颜色
 @navbar-inverse-link-color:                 lighten(@gray-light, 15%);
 @navbar-inverse-link-hover-color:           #fff;
 @navbar-inverse-link-hover-bg:              transparent;
@@ -409,7 +410,7 @@
 @navbar-inverse-link-disabled-color:        #444;
 @navbar-inverse-link-disabled-bg:           transparent;
 
-// Inverted navbar brand label
+// Inverted navbar brand label 标签
 @navbar-inverse-brand-color:                @navbar-inverse-link-color;
 @navbar-inverse-brand-hover-color:          #fff;
 @navbar-inverse-brand-hover-bg:             transparent;
@@ -424,7 +425,7 @@
 //
 //##
 
-//=== Shared nav styles
+//=== Shared nav styles 共享导航样式
 @nav-link-padding:                          10px 15px;
 @nav-link-hover-bg:                         @gray-lighter;
 
